@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spend Wise</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  </head>
+  <body>
+    <h2>Spend Wise</h2>
+
+    <div class="container">
+      <h4>Your Balance</h4>
+      <h1 class="amount" id="balance">$0.00</h1>
+
+      
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p class="moneyplus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p class="moneyminus">-$0.00</p>
+        </div>
+      </div>
+
+      <h3 id="history"> History</h3>
+
+      <ul class="list">
+      </ul>
+
+      <h3>Add new transaction</h3>
+      <form>
+        <div class="form-control">
+          <label for="text">Text</label> 
+          <input id="inputtext" autocomplete="off" type="text" placeholder="Enter text..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Amount <br />
+            (negative - expense, positive - income)</label
+          >
+          <input id="inputamt" type="number" placeholder="Enter amount..." />
+        </div>
+        <button id="submit" class="btn">Add transaction</button>
+      </form>
+    </div>
+
+    <!-- Add your script Tag here -->
+    <script src="index.js"></script>
+  </body>
+</html>
